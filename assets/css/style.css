@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&family=Roboto+Slab&display=swap');
+
+
+:root{
+    --color-brand: #000000;
+    --color-nav: #171821;
+    --color-header: #9794a5;
+    --color-body: #e1ddf2;
+    --font-base: "Roboto Slab";
+}
+
+body{
+    background-color: var(--color-brand);
+    color: var(--color-body);
+    font-family: var(--font-base),sans-serif;
+}
+
+h1,h1,h3,h4,h5,h6 {
+    color: var(--color-header);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--color-brand);
+}
+
+img{
+    width: 100%;
+}
+
+.full-height{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid var(--color-nav);
+}
+
+.bg-base{
+    background-color: var(--color-header);
+}
+
+.shadow-effect{
+    transition: all 0.4s;
+}
+.shadow-effect:hover{
+    box-shadow: 0 0 0 8px var(--color-body);
+}
+
+.icon-box{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: var(--color-header);
+
+}
+
+.navbar{
+    background-color: var(--color-nav);
+}
+
+.navbar .nav-link{
+    font-weight: 700;
+    color: var(--color-body)
+}
+
+.navbar .nav-link:hover{
+    color: var(--color-brand)
+}
+
+
+@media(min-width: 992px){
+    .navbar {
+        min-height: 100vh;
+        width: 240px;
+        background: var(--color-nav);
+        background-size: cover;
+        background-position: center;
+    }
+    .navbar-brand img {
+        border: 8px solid var(--color-body);
+    }
+
+    #content-wrapper{
+        padding-left: 240px;
+    }
+}
